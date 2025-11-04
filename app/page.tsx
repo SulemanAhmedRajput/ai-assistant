@@ -56,7 +56,7 @@ export default function Chat() {
                 AI Assistant
               </h1>
               <p className="text-xs text-gray-500 dark:text-gray-400">
-                Powered by Gemini
+                Powered by <b className='text-purple-600'>StackLab Forge</b>
               </p>
             </div>
           </div>
@@ -232,7 +232,7 @@ export default function Chat() {
                 }}
                 placeholder="Type your message... (Press Enter to send, Shift+Enter for new line)"
                 rows={1}
-                className="w-full px-4 py-3 pr-12 border border-gray-300 dark:border-gray-600 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent resize-none bg-white dark:bg-gray-800 text-gray-900 dark:text-white placeholder-gray-500 dark:placeholder-gray-400 max-h-32 overflow-y-auto"
+                className="w-full px-4 py-3 pr-12 border border-gray-300 dark:border-gray-600 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent resize-none bg-white dark:bg-gray-800 text-gray-900 dark:text-white placeholder-gray-500 dark:placeholder-gray-400 max-h-32 overflow-y-auto custom-scrollbar"
                 style={{
                   minHeight: '48px',
                   height: 'auto',

@@ -157,3 +157,45 @@ body {
 .markdown-content li p {
   margin: 0;
 }
+/* Custom scrollbar for textarea */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 8px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+  border-radius: 10px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom, #3b82f6, #8b5cf6);
+  border-radius: 10px;
+  border: 2px solid transparent;
+  background-clip: padding-box;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(to bottom, #2563eb, #7c3aed);
+  background-clip: padding-box;
+}
+
+/* Dark mode scrollbar */
+.dark .custom-scrollbar::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom, #60a5fa, #a78bfa);
+  background-clip: padding-box;
+}
+
+.dark .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(to bottom, #3b82f6, #8b5cf6);
+  background-clip: padding-box;
+}
+
+/* Firefox scrollbar */
+.custom-scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: #3b82f6 transparent;
+}
+
+.dark .custom-scrollbar {
+  scrollbar-color: #60a5fa transparent;
+}
